@@ -1,0 +1,36 @@
+// This file contains helpers- base css variables which will be used in other scss files
+
+// Primary colors -color
+$daad-blau: #0060af !default;
+$blau-hover: #003366 !default;
+$schwarz: #000000 !default;
+$schwarzgrau: #333333 !default;
+$lichtgrau: #f3f3f3 !default;
+$mittelgrau: #999999 !default;
+$hellgrau: #e5e5e5 !default;
+$dunkelgrau: #666666 !default;
+$weissgrau: #f9f9f9 !default;
+$orange: #666666 !default;
+$orangeHover: #999999 !default;
+$lichtorange: #fce3cc !default;
+$white:  #ffffff !default;
+$light-blue-grey:  #e4eef7 !default;
+//  Fonts -font-family
+$arial: Arial, Helvetica, sans-serif !default;
+
+// Font sizes -font-size
+$font-size28: 28px !default;
+$font-size18: 18px !default;
+$font-size16: 16px !default;
+$font-size13: 13px !default;
+$font-size12: 12px !default;
+$font-size11: 11px !default;
+
+// Line height -line-height
+$line-height34: 34px !default;
+$line-height27: 27px !default;
+$line-height23: 23px !default;
+$line-height21: 21px !default;
+$line-height17: 17px !default;
+$line-height16: 16px !default;
+$line-height14: 14px !default;

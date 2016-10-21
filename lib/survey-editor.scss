@@ -1,0 +1,237 @@
+#surveyjseditor {
+    font-family: $arial;
+    color: $schwarzgrau;
+
+    .row.nav-tabs {
+        border-bottom: none;
+    }
+
+    // Question title text
+    h5 {
+        font-weight: bold;
+        font-size: $font-size18;
+    }
+
+    //main panel container
+    > .panel >.row {
+        border: 2px solid $dunkelgrau;
+        border-radius: 2px;
+        padding-top: 15px;
+
+        //page 1, add page
+        .nav-tabs {
+            border-bottom: none;
+            li {
+                margin-right: -2px;
+                a {
+                    border-color: $dunkelgrau;
+                    border-width: 2px;
+                    border-radius: 0;
+                    border-right: none;
+                    font-weight: bold;
+                }
+                button {
+                    background-color: $hellgrau;
+                    padding-bottom: 14px;
+                    border-color: $dunkelgrau;
+                    border-width: 2px;
+                    border-radius: 0;
+                    span {
+                        top: 6px;
+                    }
+                }
+            }
+        }
+
+        //left container
+        >div>div>.panel-default {
+            border: none;
+            font-size: $font-size16;
+
+            .panel-heading {
+                background-color: $white;
+                border-color: $white;
+            }
+
+            .btn-group-vertical {
+                border: 2px solid $dunkelgrau;
+                .btn-default {
+                    color: $schwarzgrau;
+                    border-color: $white;
+
+                    &:nth-child(2n) {
+                        background-color: $lichtgrau;
+                    }
+
+                    &:hover {
+                        background-color: $mittelgrau;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        //right container
+        .panel-default {
+            font-size: $font-size16;
+            border: 2px solid $dunkelgrau;
+
+            .panel-heading {
+                background-color: $hellgrau;
+                border-color: $hellgrau;
+            }
+
+
+            table tr {
+
+                color: $schwarzgrau;
+
+                &:nth-child(2n) {
+                    background-color: $lichtgrau;
+                }
+
+                &:hover {
+                    background-color: $mittelgrau;
+                    color: $white;
+                }
+
+                &.active >td {
+                    background-color: $mittelgrau;
+                    color: $white;
+                }
+
+                &.active input {
+                    color: $schwarzgrau;
+                }
+
+                td {
+                    border-color: $white;
+                    padding: 8px 6px;
+                }
+            }
+        }
+
+        // th middle part of editor
+        > div {
+            &:first-child {
+                > div {
+                    &:nth-child(2) {
+                        > div {
+                            &:nth-child(2){
+                                border: 2px $dunkelgrau solid;
+                                margin-left: -15px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            //please drop a question here
+            .well {
+                background-color: $lichtgrau;
+                border: 1px solid $hellgrau;
+            }
+        }
+    }
+
+    .navbar-default {
+        background-color: transparent;
+
+        >ul {
+            border-bottom: none;
+        }
+
+        li {
+            background-color: $hellgrau;
+            border: 2px $dunkelgrau solid;
+            border-bottom: none;
+            margin-right: 0;
+
+            &:last-child{
+               display: none;
+            }
+
+            a {
+                color: $schwarzgrau;
+                font-weight: bold;
+                border: none;
+            }
+        }
+
+        //buttons on right side- Run Survey & Embed Survey
+        .btn-toolbar button {
+
+
+            &:nth-of-type(2){
+                display: none;
+            }
+        }
+    }
+
+    .svd_q_copybutton button {
+        display: none;
+    }
+
+    #surveyjs .form-control {
+        &:focus {
+            border-color: $daad-blau;
+            box-shadow: inset 0 1px 1px $lichtgrau,0 0 8px $daad-blau;
+        }
+    }
+}
+
+// run survey modal
+#appContainer #surveyExampleModal {
+    h4 {
+        text-align: left;
+        color: $white;
+    }
+
+    .modal-header {
+        padding: 0 10px 0 30px;
+        background-color: $blau-hover;
+
+        button{
+            margin-left: 15px;
+            font-size: 40px;
+            color: $white;
+            opacity: 100;
+        }
+    }
+
+    .modal-body {
+        padding: 15px 0;
+    }
+
+    .panel-footer {
+        input {
+            color: $dunkelgrau;
+            border: 1px $mittelgrau solid;
+            border-radius: 5px;
+            height: 30px;
+            margin: 0 10px;
+            padding: 0 10px;
+            background-color: $lichtgrau;
+
+            &:hover {
+                background-color: $hellgrau;
+            }
+
+            &:focus {
+                box-shadow: none;
+            }
+
+            &:nth-of-type(3) {
+                cursor: not-allowed;
+                pointer-events: none;
+                background-color: $hellgrau;
+            }
+        }
+    }
+
+
+    select {
+        &:focus {
+            border-color: $daad-blau;
+        }
+    }
+}

@@ -1,0 +1,226 @@
+$imagesFolderPath: "../images";
+
+@import "helpers";
+@import "survey-editor";
+@import "component/app/index";
+@import "component/common/index";
+@import "component/login/index";
+@import "component/user/index";
+@import "component/user/surveySettings/index";
+@import "component/common/confirmDialog";
+//@import "daad-bootsrtap";
+
+//font icons
+@import "../images/icons/font-awesome-4.6.3/scss/font-awesome";
+
+@media (min-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
+
+html * {
+    outline: 0 !important;
+}
+
+.componentContainer {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#app.container {
+    //height: 1024px;
+    object-fit: contain;
+    padding: 0;
+
+    #appContainer {
+        padding: 0;
+        margin: 0;
+       // width: inherit;
+    }
+}
+
+// button primary
+.daad-button-primary,
+.daad-button-primary:focus {
+    width: auto;
+    color: $white;
+    background-color: $orange;
+    border-color: $orange;
+    border-radius: 2px;
+    height: 48px;
+    padding: 12px 24px;
+    font-weight: bold;
+
+    span {
+        //font-family: TheSans-B7;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: bold;
+        line-height: 1.14;
+    }
+
+    &:hover {
+        background-color: $orangeHover;
+        border-color: $orangeHover;
+        color: $white;
+    }
+}
+
+// button secondary
+.daad-button-secondary {
+    width: auto;
+    color: $dunkelgrau;
+    background-color: $lichtgrau;
+    border-color: $lichtgrau;
+    border-radius: 2px;
+    height: 48px;
+    padding: 12px 24px;
+    font-weight: bold;
+
+    span {
+        //font-family: TheSans-B7;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: bold;
+        line-height: 1.14;
+    }
+
+    &:hover {
+        background-color: $weissgrau;
+        border-color: $weissgrau;
+        color: $dunkelgrau;
+    }
+}
+
+.btn:active {
+    box-shadow: none!important;
+}
+//links
+a {
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.daad-font-icon-arrow-down {
+    &:after {
+        font-family: 'FontAwesome';
+        content: "\f107";
+        font-size: $font-size16;
+        margin-left: 8px;
+        font-weight: 100;
+    }
+}
+
+.drag {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    background-color: #305a84;
+    border-radius: 2px;
+    height: 40px;
+}
+
+.drop {
+    border: solid red 1px;
+    width: 100px;
+    height: 100px;
+}
+
+#appContainer h4,
+h4 {
+    color: $dunkelgrau;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.dropdown-toggle {
+    font-family: $arial;
+
+    &:active,
+    &:focus{
+        box-shadow: none;
+    }
+}
+
+.btn-group.open .dropdown-toggle {
+    box-shadow: none;
+    background-color: $weissgrau;
+    &:focus{
+        background-color: $weissgrau;
+        color: $dunkelgrau;
+    }
+}
+
+.dropdown-menu span{
+    font-size: 14px;
+    color: $dunkelgrau;
+}
+.fa-eye-slash:before {
+    color: $orange;
+}
+
+ul.dropdown-menu {
+    min-width: 120px;
+}
+
+//infotext tooltip
+.tooltip-inner {
+    max-width: 200px;
+    padding: 3px 8px;
+    color: $dunkelgrau;
+    text-align: center;
+    background-color: $light-blue-grey;
+    border-radius: 4px;
+}
+
+.tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.tooltip.top-right .tooltip-arrow {
+    bottom: 0;
+    left: 5px;
+    margin-bottom: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: $light-blue-grey;
+}
+
+.tooltip.right .tooltip-arrow {
+    top: 50%;
+    left: 0;
+    margin-top: -5px;
+    border-width: 5px 5px 5px 0;
+    border-right-color: $light-blue-grey;
+}
+
+.tooltip.bottom-right .tooltip-arrow {
+    top: 0;
+    left: 5px;
+    margin-top: -5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: $light-blue-grey;
+}
